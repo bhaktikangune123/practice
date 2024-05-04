@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.side-menu {
+   position: fixed;
+   width: 40vh;
+   height: 100vh;
+   background-color: green;
+   display: flex;
+   flex-direction: column;
+}
+.side-menu .brand-name{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.side-menu img{
+    height: 20px;
+    width: 20px;
+}
+.side-menu li{
+    font-size: 20px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.side-menu li:hover{
+    color: green;
+    background: white;
+}
+.btn{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover{
+    background-color: white;
+    color: green;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid green;
+}
+.container{
+    position:absolute;
+    height: 100vh;
+    width: 80vw;
+    background: #f1f1f1;
+    right: 0;
+}
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 13vh;
+    width: 170vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+.container .header .nav{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container .header .nav .college-name{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: green;
+}
+a{
+    text-decoration: none;
+}
+.container .header .nav .user{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .header .nav .user img{
+    height: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content {
+    position: relative;
+    margin-top: 15vh;
+    height: 90vh;
+    background: #f1f1f1;
+}
+.container .content .cards{
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card{
+    height: 120px;
+    width: 250px;
+    background: white;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+.icon-img img{
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+.container .content .content1{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content1 .activity{
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    display: flex;
+    
+    flex-direction: column;
+    margin: 0 25px 25px 25px;
+}
+table{
+    padding: 10px;
+}
+td,tr{
+    padding: 8px;
+    text-align: left;
+}
+.container .content .content1 .content2{
+    min-height: 50vh;
+    flex: 2;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px 25px 25px;
+}
+.container .content .content1 .content2 img{
+    height: 40px;
+    width: 40px;
+}
+.title{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 2px solid #999;
+}
+@media screen and (max-width:1050px){
+    .side-menu li ul{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width :100px){
+    .side-menu li span{
+        display: none;
+    }
+    .side-menu li img{
+        width: 30px;
+        height: 30px;
+    }
+    .side-menu .brand-name h1{
+        display: none;
+    }
+    .container .header .nav .college-name h1{
+        font-size: 16px;
+    }
+}
