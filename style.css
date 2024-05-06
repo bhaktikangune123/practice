@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+.container {
+    display: flex;
+}
+
+.side-menu {
+    background-color: green;
+    width: 200px;
+    height: 100vh;
+}
+
+.side-menu ul {
+    padding: 20px;
+}
+
+.side-menu li {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.side-menu li:hover {
+    color: green;
+    background: white;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 0 10px 20px;
+    width: calc(33.3333% - 20px);
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.placement-count {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.placement-count h2 {
+    margin-bottom: 10px;
+}
+
+.company-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.company-table th, .company-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.company-table th {
+    background-color: #f1f1f1;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+    }
+}
